@@ -362,7 +362,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'required' => 1,
     'settings' => array(
       'attributes' => array(
-        'class' => '',
+        'class' => 'button-see-online',
         'configurable_title' => 0,
         'rel' => 'nofollow',
         'target' => '_blank',
