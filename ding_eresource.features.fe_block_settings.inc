@@ -14,6 +14,7 @@ function ding_eresource_default_fe_block_settings() {
 
   $export['views-98880b6fbff6f74deeae473932e04e0b'] = array(
     'cache' => -1,
+    'custom' => 0,
     'delta' => '98880b6fbff6f74deeae473932e04e0b',
     'module' => 'views',
     'node_types' => array(),
@@ -33,6 +34,8 @@ function ding_eresource_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

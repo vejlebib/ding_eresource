@@ -195,7 +195,6 @@ function ding_eresource_field_group_info() {
     'children' => array(
       0 => 'field_ding_eresource_lead',
       1 => 'field_ding_eresource_category',
-      2 => 'field_ding_eresource_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(
