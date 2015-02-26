@@ -80,7 +80,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'entity_type' => 'node',
     'field_name' => 'field_ding_eresource_access',
     'label' => 'Access',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -129,7 +129,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'entity_type' => 'node',
     'field_name' => 'field_ding_eresource_body',
     'label' => 'Body',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -307,7 +307,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'entity_type' => 'node',
     'field_name' => 'field_ding_eresource_lead',
     'label' => 'Lead',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -456,7 +456,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'entity_type' => 'node',
     'field_name' => 'field_ding_eresource_list_image',
     'label' => 'Logo',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
