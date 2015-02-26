@@ -151,6 +151,13 @@ function ding_eresource_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_ding_eresource_pattern';
+  $strongarm->value = 'e-materialer/[node:title]';
+  $export['pathauto_node_ding_eresource_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'scheduler_publish_enable_ding_eresource';
   $strongarm->value = 1;
   $export['scheduler_publish_enable_ding_eresource'] = $strongarm;
