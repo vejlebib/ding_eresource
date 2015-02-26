@@ -15,7 +15,7 @@ function ding_eresource_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Ding E-resources';
   $page->admin_description = '';
-  $page->path = 'e-resurser/!tid';
+  $page->path = 'e-materialer/!tid';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array(
