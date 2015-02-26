@@ -359,7 +359,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'entity_type' => 'node',
     'field_name' => 'field_ding_eresource_link',
     'label' => 'Link',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'attributes' => array(
         'class' => 'button-see-online',
