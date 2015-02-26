@@ -21,6 +21,12 @@ function ding_eresource_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bang' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bang',
+        'weight' => 0,
+      ),
       'ddbasic' => array(
         'region' => '',
         'status' => 0,

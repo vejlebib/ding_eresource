@@ -473,7 +473,6 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          'private' => 0,
           'public' => 'public',
           'vimeo' => 0,
           'youtube' => 0,

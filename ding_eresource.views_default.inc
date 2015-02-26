@@ -43,7 +43,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['style_options']['class'] = 'list eresource-list';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Felt: Image (logo) */
+  /* Field: Image (logo) */
   $handler->display->display_options['fields']['field_ding_eresource_list_image']['id'] = 'field_ding_eresource_list_image';
   $handler->display->display_options['fields']['field_ding_eresource_list_image']['table'] = 'field_data_field_ding_eresource_list_image';
   $handler->display->display_options['fields']['field_ding_eresource_list_image']['field'] = 'field_ding_eresource_list_image';
@@ -66,14 +66,14 @@ function ding_eresource_views_default_views() {
       'fallback_style' => 'ding_list_large',
     ),
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Felt: Lead */
+  /* Field: Lead */
   $handler->display->display_options['fields']['field_ding_eresource_lead']['id'] = 'field_ding_eresource_lead';
   $handler->display->display_options['fields']['field_ding_eresource_lead']['table'] = 'field_data_field_ding_eresource_lead';
   $handler->display->display_options['fields']['field_ding_eresource_lead']['field'] = 'field_ding_eresource_lead';
@@ -84,25 +84,25 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['field_ding_eresource_lead']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_eresource_lead']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_ding_eresource_lead']['element_default_classes'] = FALSE;
-  /* Sort criterion: Indhold: Titel */
+  /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_eresource' => 'ding_eresource',
   );
-  /* Filter criterion: Indhold: Sprog */
+  /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -110,7 +110,7 @@ function ding_eresource_views_default_views() {
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
     'und' => 'und',
   );
-  /* Filter criterion: Indhold: Access (field_ding_eresource_access) */
+  /* Filter criterion: Content: Access (field_ding_eresource_access) */
   $handler->display->display_options['filters']['field_ding_eresource_access_tid']['id'] = 'field_ding_eresource_access_tid';
   $handler->display->display_options['filters']['field_ding_eresource_access_tid']['table'] = 'field_data_field_ding_eresource_access';
   $handler->display->display_options['filters']['field_ding_eresource_access_tid']['field'] = 'field_ding_eresource_access_tid';
@@ -138,7 +138,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['link_url'] = 'e-resurser';
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indhold: Category (field_ding_eresource_category) */
+  /* Contextual filter: Content: Category (field_ding_eresource_category) */
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
@@ -213,12 +213,12 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['empty']['area_text_custom']['content'] = '<h2>E-resurser</h2>
 <p>E-resurser er elektroniske opslagsværker, aviser og tidsskrifter, e-bøger og andre netmedier, som biblioteket stiller gratis til rådighed for borgerne. Brug e-resurserne til at låne netmedier eller søge i databaser efter alverdens emner. De fleste e-resurser har fjernadgang. Det betyder, at du kan anvende dem hjemmefra fra en hvilken som helst internet-adgang. Det kræver blot, at du er bosat i kommunen og er indmeldt som låner på et af bibliotekerne. Alle kan benytte e-resurserne på biblioteket.</p>';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Indhold: Category (field_ding_eresource_category) */
+  /* Relationship: Content: Category (field_ding_eresource_category) */
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Category */
+  /* Field: Content: Category */
   $handler->display->display_options['fields']['field_ding_eresource_category']['id'] = 'field_ding_eresource_category';
   $handler->display->display_options['fields']['field_ding_eresource_category']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['fields']['field_ding_eresource_category']['field'] = 'field_ding_eresource_category';
@@ -229,7 +229,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['field_ding_eresource_category']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_eresource_category']['empty'] = '<h2>E-resurser (no results text)<h/2>';
   $handler->display->display_options['fields']['field_ding_eresource_category']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Ord i ordforråd: Beskrivelse af term */
+  /* Field: Taxonomy term: Term description */
   $handler->display->display_options['fields']['description']['id'] = 'description';
   $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['description']['field'] = 'description';
@@ -241,7 +241,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['description']['empty'] = 'No results text.';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indhold: Category (field_ding_eresource_category) */
+  /* Contextual filter: Content: Category (field_ding_eresource_category) */
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
@@ -255,14 +255,14 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['specify_validation'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_eresource' => 'ding_eresource',
   );
-  /* Filter criterion: Indhold: Sprog */
+  /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
