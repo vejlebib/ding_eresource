@@ -22,7 +22,7 @@ function ding_eresource_ding_eresource_categories_content_type_render($subtype, 
   if (isset($conf['vocabulary']) && $conf['vocabulary'] > 0) {
     $links = array();
 
-    $base_path = 'e-resurser';
+    $base_path = 'e-materialer';
 
     // Default link of 'All libraries' links to staff list page. 
     // Set active class if no term is given in panel arguments.
