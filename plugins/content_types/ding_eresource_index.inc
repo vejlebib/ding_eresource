@@ -20,7 +20,7 @@ function ding_eresource_ding_eresource_index_content_type_render($subtype, $conf
   $selected_letter = FALSE;
   $links = array();
   $options = array('attributes' => array('class' => array('active')));
-  $base_path = 'e-resurser/all';
+  $base_path = 'e-materialer/all';
   
   // Select library nids and titles.
   $results = db_query("SELECT DISTINCT

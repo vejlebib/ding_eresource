@@ -26,7 +26,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
-  $handler->display->display_options['link_url'] = 'e-resurser';
+  $handler->display->display_options['link_url'] = 'e-materialer';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -135,7 +135,7 @@ function ding_eresource_views_default_views() {
   /* Display: E-resources list */
   $handler = $view->new_display('panel_pane', 'E-resources list', 'ding_eresource_list');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['link_url'] = 'e-resurser';
+  $handler->display->display_options['link_url'] = 'e-materialer';
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Category (field_ding_eresource_category) */
