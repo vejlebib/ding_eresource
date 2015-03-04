@@ -161,8 +161,8 @@ function ding_eresource_field_default_field_bases() {
     'locked' => 0,
     'module' => 'file',
     'settings' => array(
-      'display_default' => 0,
-      'display_field' => 0,
+      'display_default' => 1,
+      'display_field' => 1,
       'profile2_private' => FALSE,
       'uri_scheme' => 'public',
     ),
