@@ -5,6 +5,209 @@
  */
 
 /**
+ * Implements hook_default_page_manager_handlers().
+ */
+function ding_eresource_default_page_manager_handlers() {
+  $export = array();
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'node_view_panel_context_ding_eresource';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -22;
+  $handler->conf = array(
+    'title' => 'Ding E-resource',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(
+      0 => array(
+        'identifier' => 'User',
+        'keyword' => 'user',
+        'name' => 'user',
+        'type' => 'current',
+        'uid' => NULL,
+        'id' => 1,
+      ),
+    ),
+    'relationships' => array(
+      0 => array(
+        'identifier' => 'Category term',
+        'keyword' => 'taxonomy_term',
+        'name' => 'entity_from_field:field_ding_eresource_category-node-taxonomy_term',
+        'delta' => '0',
+        'context' => 'argument_entity_id:node_1',
+        'id' => 1,
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'ding_eresource' => 'ding_eresource',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'panels_breadcrumbs_state' => 1,
+    'panels_breadcrumbs_titles' => 'FAQ
+%node:title',
+    'panels_breadcrumbs_paths' => 'faq
+<none>',
+    'panels_breadcrumbs_home' => 1,
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+  );
+  $display = new panels_display();
+  $display->layout = '25_50_25';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'left' => NULL,
+      'middle' => NULL,
+      'right' => NULL,
+      'top' => NULL,
+      'bottom' => NULL,
+      'left_sidebar' => NULL,
+      'main_content' => NULL,
+      'right_sidebar' => NULL,
+      'attachment_4_1' => NULL,
+      'attachment_4_2' => NULL,
+      'attachment_4_3' => NULL,
+      'attachment_4_4' => NULL,
+      'attachment_3_1' => NULL,
+      'attachment_3_2' => NULL,
+      'attachment_3_3' => NULL,
+      'attachment_2_1' => NULL,
+      'attachment_2_2' => NULL,
+      'attachment_1_1' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'd82976d5-f78c-46b3-8d9a-c2ba458d539c';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-203b68b0-35f7-4be2-bac3-b300a7e5f01c';
+    $pane->panel = 'left_sidebar';
+    $pane->type = 'taxonomy_menu';
+    $pane->subtype = 'taxonomy_menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'slug' => 'e-materialer',
+      'default_link_text' => 'All categories',
+      'dropdown' => 0,
+      'vocabulary' => 'e_resource_category',
+      'base' => '',
+      'context' => array(
+        0 => 'relationship_entity_from_field:field_ding_eresource_category-node-taxonomy_term_1',
+        1 => 'empty',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '203b68b0-35f7-4be2-bac3-b300a7e5f01c';
+    $display->content['new-203b68b0-35f7-4be2-bac3-b300a7e5f01c'] = $pane;
+    $display->panels['left_sidebar'][0] = 'new-203b68b0-35f7-4be2-bac3-b300a7e5f01c';
+    $pane = new stdClass();
+    $pane->pid = 'new-9585f181-cf01-4270-a7fd-b981246d6e2c';
+    $pane->panel = 'main_content';
+    $pane->type = 'node_content';
+    $pane->subtype = 'node_content';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'links' => 0,
+      'no_extras' => 0,
+      'override_title' => 0,
+      'override_title_text' => '',
+      'identifier' => '',
+      'link' => 0,
+      'leave_node_title' => 1,
+      'build_mode' => 'full',
+      'context' => 'argument_entity_id:node_1',
+    );
+    $pane->cache = array(
+      'method' => '0',
+      'settings' => array(),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'naked',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = '';
+    $pane->uuid = '9585f181-cf01-4270-a7fd-b981246d6e2c';
+    $display->content['new-9585f181-cf01-4270-a7fd-b981246d6e2c'] = $pane;
+    $display->panels['main_content'][0] = 'new-9585f181-cf01-4270-a7fd-b981246d6e2c';
+    $pane = new stdClass();
+    $pane->pid = 'new-fb3893c4-f99a-47a1-989f-46b5483382fd';
+    $pane->panel = 'right_sidebar';
+    $pane->type = 'campaign';
+    $pane->subtype = 'campaign';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'ding_campaign_count' => 3,
+      'ding_campaign_offset' => 0,
+      'context' => array(
+        0 => 'argument_entity_id:node_1',
+        1 => 'relationship_og_node_from_group_1',
+        2 => 'empty',
+        3 => 'relationship_terms_from_node_1',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array(
+      'method' => 'simple',
+      'settings' => array(
+        'lifetime' => '600',
+        'granularity' => 'context',
+      ),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = '';
+    $pane->uuid = 'fb3893c4-f99a-47a1-989f-46b5483382fd';
+    $display->content['new-fb3893c4-f99a-47a1-989f-46b5483382fd'] = $pane;
+    $display->panels['right_sidebar'][0] = 'new-fb3893c4-f99a-47a1-989f-46b5483382fd';
+  $display->hide_title = PANELS_TITLE_PANE;
+  $display->title_pane = 'new-9585f181-cf01-4270-a7fd-b981246d6e2c';
+  $handler->conf['display'] = $display;
+  $export['node_view_panel_context_ding_eresource'] = $handler;
+
+  return $export;
+}
+
+/**
  * Implements hook_default_page_manager_pages().
  */
 function ding_eresource_default_page_manager_pages() {
@@ -16,7 +219,10 @@ function ding_eresource_default_page_manager_pages() {
   $page->admin_title = 'Ding E-resources';
   $page->admin_description = '';
   $page->path = 'e-materialer/!tid';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'tid' => array(
