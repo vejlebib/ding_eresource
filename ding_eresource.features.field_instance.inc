@@ -55,7 +55,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
         'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 4,
       ),
       'search_result' => array(
@@ -311,7 +311,7 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_label',
