@@ -116,7 +116,7 @@ function ding_eresource_default_page_manager_handlers() {
         0 => 'relationship_entity_from_field:field_ding_eresource_category-node-taxonomy_term_1',
         1 => 'empty',
       ),
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
