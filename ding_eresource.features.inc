@@ -32,11 +32,11 @@ function ding_eresource_views_api($module = NULL, $api = NULL) {
 function ding_eresource_node_info() {
   $items = array(
     'ding_eresource' => array(
-      'name' => t('E-resource'),
+      'name' => t('E-materiale'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
   );
